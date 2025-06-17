@@ -58,7 +58,7 @@ function ConversorMoneda() {
 
   return (
     <div>
-      <img src="img/icono.png" alt="" className="conversor-imagen" />
+      <img src="./logo.png" alt="" className="conversor-imagen" />
       <h1>Conversor de moneda</h1>
       <p>Escoje la moneda y la cantidad para realizar la conversión</p>
       
