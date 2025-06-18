@@ -11,9 +11,9 @@ function ConversorMoneda() {
   const [cambio, setCambio] = useState('');
 
   // Función para obtener tasas de cambio desde una API pública
-  const obtenerTasaCambio = async (from, to) => {
+  const obtenerTasaCambio = async (from: string, to: string) => {
     try {
-      const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${from}`);
+      const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${f}`);
       const data = await response.json();
       return data.rates[to];
     } catch (error) {
