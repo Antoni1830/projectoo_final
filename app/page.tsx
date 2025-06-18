@@ -28,12 +28,13 @@ function ConversorMoneda() {
       setCantidadDos('');
       return;
     }
-    if (monedaUno === monedaDos) {
-      const resultado = parseFloat(cantidadUno).toFixed(2);
+      if (monedaUno === monedaDos) {
+      const resultado = parseFloat;
       setCambio(`1 ${monedaUno} = 1 ${monedaDos}`);
-      setCantidadDos(resultado);
+      setCantidadDos(resultado.toString()); // Ensure it's a string
       return;
-    }
+  }
+  
     const tasa = await obtenerTasaCambio(monedaUno, monedaDos);
     if (tasa) {
       const resultado = (cantidadUno * tasa).toFixed(2);
