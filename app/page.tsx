@@ -126,7 +126,7 @@ function ConversorMoneda() {
             id="cantidad-uno" 
             placeholder="0"  
             value={cantidadUno}
-            onChange={(e) => setCantidadUno(e.target.value)}
+            onChange={(e) => setCantidadUno(parseFloat(e.target.value))} 
           />
         </div>
 
